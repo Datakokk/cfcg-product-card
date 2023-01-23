@@ -44,9 +44,9 @@ export const ProductCard = ({ children, product, className, style, onChange, val
                 increaseBy,
                 reset,
               }
-              ) 
+              )
             }
         </div>   
     </Provider>
   )
-}
+};

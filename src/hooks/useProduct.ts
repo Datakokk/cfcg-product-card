@@ -5,7 +5,7 @@ interface useProductArg {
     product: Product;
     onChange?: ( arg: onChangeArgs ) => void;
     value?: number;
-    initialValues?: InitialValues
+    initialValues?: InitialValues;
 }
 
 export const useProduct = ( { onChange, product, value=0, initialValues }: useProductArg ) => {
@@ -25,7 +25,7 @@ export const useProduct = ( { onChange, product, value=0, initialValues }: usePr
 
     const reset = () => {
         setCounter( initialValues?.count || value );
-    }
+    };
 
     // useEffect(() => {
     //     if( !isMounted.current ) return;
@@ -44,5 +44,5 @@ export const useProduct = ( { onChange, product, value=0, initialValues }: usePr
 
         increaseBy,
         reset
-    }
+    };
 };
